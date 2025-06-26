@@ -11,3 +11,38 @@
   <label for="nombre">Nombre:</label>
   <input type="text" id="nombre" name="nombre">
   <button type
+  <!-- ...existing code... -->
+<style>
+  body {
+    transition: background 1s cubic-bezier(.4,2,.6,.9);
+  }
+  .agua {
+    background: radial-gradient(circle at 50% 50%, #aeefff 0%, #ffffff 100%);
+    filter: blur(2px) brightness(1.2);
+    transition: background 1s cubic-bezier(.4,2,.6,.9), filter 1s;
+  }
+  .menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #2196f3;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    user-select: none;
+  }
+</style>
+
+<div class="menu" onclick="desvanecerFondo()">☰ Menú</div>
+
+<script>
+  function desvanecerFondo() {
+    document.body.classList.toggle('agua');
+  }
+</script>
+<!-- ...existing code... -->
+ 

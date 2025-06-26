@@ -1,3 +1,7 @@
+
+body {
+  background: rgba(255, 255, 0, 0.418);
+}
 .menu {
   position: fixed;
   top: 20px;
@@ -21,13 +25,12 @@
   padding: 8px 16px;
   border-radius: 8px;
   transition: background 0.3s, color 0.3s;
-}
-.menu a:hover {
-  background: #6811d9;
-  color: #fff;
-}
-body {
-  background: linear-gradient(135deg, #285b85 0%, #a63c3c 100%);
-  margin: 0;
-  font-family: Arial, sans-serif;
+
+.menu {
+  /* ...otros estilos... */
+  background: #8d1eb9;           /* Fondo sólido */
+    color: #fff;
+  backdrop-filter: none;      /* Sin desenfoque */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.708);
+  /* ...otros estilos... */
 }
